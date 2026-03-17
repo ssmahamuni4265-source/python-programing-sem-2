@@ -1,0 +1,19 @@
+# -*- library books to store  name & price
+"""
+Created on Tue Mar 17 10:53:34 2026
+
+@author: sahil mahamuni
+"""
+
+# Library dictionary
+library={
+        "Python Basics":250,
+        "Data Structures":300,
+        "Algorithms":400
+}
+
+# update price of a book
+library["Data Structures"]=350
+
+print (library)
+
