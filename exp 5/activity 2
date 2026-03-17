@@ -1,0 +1,26 @@
+# -*- shop info & updets
+"""
+Created on Tue Mar 17 11:01:34 2026
+
+@author: sahil mahamuni 
+"""
+
+# Shop inventory dictionary
+inventory={
+    "Apples": 50,
+    "Bananas": 30,
+    "Oranges": 20
+}
+
+#Add new stock
+item =input("Enter item name:")
+quantity = int(input("Enter quantity to add:"))
+
+#if item exists, icrease quantity; otherwise add new item 
+if item in inventory:
+    inventory[item] +=quantity
+else:
+    inventory[item]=quantity
+    
+    print("Upadated inventory:")
+    print(inventory)
