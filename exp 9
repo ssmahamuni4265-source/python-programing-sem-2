@@ -1,8 +1,8 @@
- Using the math module to calculate square root,power,trigonometric functions
+# Using the math module to calculate square root,power,trigonometric functions
 """
 Created on Mon Apr 20 14:34:42 2026
 
-@author: sujit
+@author: sahil mahamuni
 """
 
 import math
