@@ -1,0 +1,18 @@
+# A shopping app stores product prices in a list write python program for it
+"""
+Created on Mon Mar 16 15:59:02 2026
+
+@author: sahil
+"""
+
+# List storing product prices
+prices = [250, 120, 75, 300, 150]
+
+# Display product prices
+print("Product Prices:")
+for price in prices:
+    print(price)
+
+# Find total cost of all products
+total = sum(prices)
+print("Total Price:", total)
