@@ -1,0 +1,16 @@
+# display your name,Adress,Contact number
+"""
+Created on Mon march 16 14:34:29 2026
+
+@user: sahil
+"""
+# Taking input from user
+name = input("Enter your name: ")
+address = input("Enter your address: ")
+contact = input("Enter your contact number: ")
+
+# Displaying details
+print("\nYour Details:")
+print("Name:", name)
+print("Address:", address)
+print("Contact Number:", contact)
