@@ -1,0 +1,12 @@
+# A movie ticket system
+"""
+Created on Mon Mar  9 15:12:13 2026
+
+@user:sahil
+"""
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("Eligible for movie entry")
+else:
+    print("Not eligible for movie entry")
