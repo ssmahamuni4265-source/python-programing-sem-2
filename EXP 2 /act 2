@@ -1,0 +1,14 @@
+# Traffic police system
+"""
+Created on Mon Mar  9 15:12:13 2026
+
+@user:sahil
+"""
+speed = int(input("Enter vehicle speed (km/h): "))
+
+if speed <= 60:
+    print("No fine. Drive safely.")
+elif speed <= 80:
+    print("Fine: ₹500 for overspeeding.")
+else:
+    print("Fine: ₹1000 for high overspeeding.")
