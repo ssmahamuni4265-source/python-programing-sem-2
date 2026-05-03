@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 24 10:47:05 2026
+
+@author: Sahil
+"""
+# Number of items and number of copies
+items = 5
+copies = 3
+
+for copy in range(1, copies + 1): # Outer loop for copies
+    print("Receipt Copy:", copy)
+    
+    for item in range(1, items + 1): # Inner loop for items
+        print("Item Number:", item)
+    
+    print() # Blank line after each receipt
