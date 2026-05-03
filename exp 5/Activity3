@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 17 11:16:44 2026
+
+@author: Sahil
+"""
+
+# Initial inventory
+inventory = {
+    "Rice": 50,
+    "Sugar": 30,
+    "Oil": 20
+}
+
+# Input new stock
+item = input("Enter item name: ")
+quantity = int(input("Enter quantity to add: "))
+
+# Add or update stock
+if item in inventory:
+    inventory[item] += quantity
+else:
+    inventory[item] = quantity
+
+# Display updated inventory
+print("\nUpdated Inventory:")
+for key, value in inventory.items():
+    print(key, ":", value)
