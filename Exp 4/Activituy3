@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 24 10:35:01 2026
+
+@author: Sahil
+"""
+
+# Input customer feedback
+feedback = "The service was very good"
+
+# Reverse the message
+reversed_feedback = feedback[::-1]
+
+# Display result
+print("Original Feedback:", feedback)
+print("Reversed Feedback:", reversed_feedback)
