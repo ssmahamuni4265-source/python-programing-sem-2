@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 24 10:03:50 2026
+
+@author: Sahil
+"""
+
+# Step 1: Create a complaint file (for demo purpose)
+file_name = "complaints.txt"
+
+with open(file_name, "w") as file:
+    file.write("Complaint Records\n")
+    file.write("1. Water supply issue in area A\n")
+    file.write("2. Street light not working\n")
+    file.write("3. Garbage not collected regularly\n")
+
+print("Complaint file created.\n")
+
+
+# Step 2: Read and display all complaints
+print("List of Complaints:\n")
+
+with open(file_name, "r") as file:
+    content = file.read()
+    print(content)
