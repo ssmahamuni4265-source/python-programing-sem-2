@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 24 09:46:00 2026
+
+@author: Sahil 
+"""
+
+# Step 1: Store daily expenses in a file
+file_name = "expenses.txt"
+
+# Writing sample daily expenses (you can change values)
+with open(file_name, "w") as file:
+    file.write("100\n")
+    file.write("250\n")
+    file.write("300\n")
+    file.write("150\n")
+    file.write("200\n")
+
+print("Daily expenses stored successfully.\n")
+
+
+# Step 2: Read and calculate total monthly expense
+total = 0
+
+with open(file_name, "r") as file:
+    for line in file:
+        expense = float(line.strip())  # convert string to number
+        total += expense
+
+print("Total Monthly Expense:", total)
