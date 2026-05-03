@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 24 10:49:21 2026
+
+@author: Sahil
+"""
+
+def calculate_emi(loan_amount, annual_rate, years):
+    # Convert annual rate to monthly rate
+    monthly_rate = annual_rate / (12 * 100)
+    
+    # Total number of monthly payments
+    months = years * 12
+    
+    # EMI formula
+    emi = (loan_amount * monthly_rate * (1 + monthly_rate)**months) / ((1 + monthly_rate)**months - 1)
+    
+    return emi
+
+
+# Example usage
+loan = 500000 # Loan amount
+rate = 8.5 # Annual interest rate (%)
+time = 5 # Years
+
+emi_value = calculate_emi(loan, rate, time)
+print("Monthly EMI:", round(emi_value, 2))
