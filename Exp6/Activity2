@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 24 09:58:19 2026
+
+@author: Sahil
+"""
+
+
+
+# Step 1: Create and write initial attendance records
+file_name = "attendance.txt"
+
+with open(file_name, "w") as file:
+    file.write("Student Attendance Record\n")
+    file.write("Name - Status\n")
+    file.write("Rahul - Present\n")
+    file.write("Sneha - Absent\n")
+    file.write("Amit - Present\n")
+
+print("Initial attendance record created.\n")
+
+
+# Step 2: Append new attendance records
+with open(file_name, "a") as file:
+    file.write("Priya - Present\n")
+    file.write("Karan - Absent\n")
+
+print("New attendance records appended.\n")
+
+
+# Step 3: Display all records
+print("Updated Attendance File:\n")
+with open(file_name, "r") as file:
+    print(file.read())
