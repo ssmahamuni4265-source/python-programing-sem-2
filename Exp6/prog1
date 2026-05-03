@@ -1,0 +1,42 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Feb 17 04:32:09 2026
+
+@author: sahil mahamuni
+"""
+
+# Step 1: Create and write to a file
+file_name = "course_outcomes.txt"
+
+with open(file_name, "w") as file:
+    file.write("Course Outcomes (COs):\n")
+    file.write("1. Understand the basics of Python programming.\n")
+    file.write("2. Apply loops, functions, and data structures.\n")
+    file.write("3. Handle files and perform basic I/O operations.\n")
+    file.write("4. Solve programming problems using logic and algorithms.\n")
+
+print("Data has been written to the file successfully.\n")
+
+
+# Step 2: Read the file content
+print("Reading file content:")
+with open(file_name, "r") as file:
+    content = file.read()
+    print(content)
+
+
+# Step 3: Append a new course outcome
+with open(file_name, "a") as file:
+    file.write("5. Gain understanding of basic software development practices.\n")
+
+print("After appending a new course outcome:")
+with open(file_name, "r") as file:
+    print(file.read())
+
+
+# Step 4: Count number of lines (course outcomes)
+with open(file_name, "r") as file:
+    lines = file.readlines()
+
+# Subtract 1 to exclude the heading line
+print("Number of course outcomes:", len(lines) - 1)
